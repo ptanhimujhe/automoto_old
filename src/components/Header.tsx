@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {  Menu, X, Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,6 +52,14 @@ const Header: React.FC = () => {
             >
               Features
             </button>
+            <Link
+                to="/blog"
+                className={`font-medium transition-colors duration-300 hover:text-primary ${
+                    isScrolled ? 'text-gray-700' : 'text-white/90 hover:text-white'
+                }`}
+            >
+              Blog
+            </Link>
             <button
                 onClick={() => scrollToSection('why-automoto')}
                 className={`font-medium transition-colors duration-300 hover:text-primary ${
@@ -114,6 +123,12 @@ const Header: React.FC = () => {
               >
                 Features
               </button>
+              <Link
+                  to="/blog"
+                  className="block w-full text-left py-3 px-4 text-gray-700 font-medium hover:bg-primary/5 hover:text-primary rounded-xl transition-colors duration-300"
+              >
+                Blog
+              </Link>
               <button 
                 onClick={() => scrollToSection('why-automoto')}
                 className="block w-full text-left py-3 px-4 text-gray-700 font-medium hover:bg-primary/5 hover:text-primary rounded-xl transition-colors duration-300"

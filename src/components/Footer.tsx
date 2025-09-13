@@ -60,6 +60,11 @@ const Footer: React.FC = () => {
               <h3 className="text-lg font-semibold mb-6">Company</h3>
               <ul className="space-y-3">
                 <li>
+                  <Link to="/blog" className="text-gray-300 hover:text-white transition-colors duration-300">
+                    Blog
+                  </Link>
+                </li>
+                <li>
                   <Link to="/terms" className="text-gray-300 hover:text-white transition-colors duration-300">
                     Terms of Service
                   </Link>
