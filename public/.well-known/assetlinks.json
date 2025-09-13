@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.automoto360.automoto",
+      "sha256_cert_fingerprints":
+      ["C8:06:1C:FE:1A:3B:6A:2B:15:51:D4:45:BA:B9:8C:BB:C5:F4:95:C9:ED:1A:5A:CA:30:DA:30:FD:D6:2B:CE:4F"]
+
+    }
+  }
+]
